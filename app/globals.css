@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-lime: #BFF900;
+  --color-primary-dark: #0B1322;
+  --color-primary-navy: #172E46;
+  --color-primary-dark-alt: #0C1424;
+  --color-text-primary: #FAFAFA;
+  --color-text-secondary: #8F9590;
+  --color-text-light: #FDFFF3;
+  --color-section-light: #F5F6F0;
+  --color-section-white: #FFFFFF;
+  --color-gray-800: #1f2937;
+  --color-dark-card: #111B2E;
+  --color-button-secondary: #0B3048;
+  --color-button-secondary-hover: #174A6B;
+  --color-primary-lime-hover: #E0FF79;
+  --color-badge-hover: #19547B;
+  --color-nav-bg: #0A101D;
+  --color-card-dark: #0C1D34;
+  --color-card-inner: #0A111F;
+  --color-text-dark: #071323;
+  --color-text-muted: #767676;
+  --color-text-description: #959B98;
+  --color-offwhite-text: #EFEFEF;
+  --color-border-light: #EAECEE;
+  --color-border-card: #FCF5F5;
+
+  --font-sans: var(--font-inter), sans-serif;
+  --font-serif: var(--font-noto-serif), serif;
+  --font-heading: var(--font-source-serif), serif;
+}
+
+:root {
+  --background: #0B1322;
+  --foreground: #FAFAFA;
+}
+
+body {
+  background-color: var(--color-primary-dark);
+  color: var(--color-text-primary);
+}
+
+html {
+  scroll-behavior: smooth;
+}
