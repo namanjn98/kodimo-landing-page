@@ -13,11 +13,12 @@ export default function Home() {
     <main>
       <Navigation />
       <Hero />
-      <ProblemSection />
+      {/* <ProblemSection /> */}
       <SolutionSection />
+      {/* pricing */}
       <FeaturesSection />
-      <SocialProof />
-      <Testimonials />
+      {/* <SocialProof />
+      <Testimonials /> */}
       <CTASection />
       <Footer />
     </main>

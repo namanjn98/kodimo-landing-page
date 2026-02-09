@@ -24,8 +24,21 @@ const sourceSerif = Source_Serif_4({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://kodimo.cc"),
   title: "Kodimo - One-click estimates. Faster Bids, Higher wins.",
   description: "Combining AI automation with verified human experts to deliver accurate construction estimates that help you win more bids.",
+  openGraph: {
+    title: "Kodimo - One-click estimates. Faster Bids, Higher wins.",
+    description: "Combining AI automation with verified human experts to deliver accurate construction estimates that help you win more bids.",
+    url: "https://kodimo.cc",
+    siteName: "Kodimo",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kodimo - One-click estimates. Faster Bids, Higher wins.",
+    description: "Combining AI automation with verified human experts to deliver accurate construction estimates that help you win more bids.",
+  },
 };
 
 export default function RootLayout({

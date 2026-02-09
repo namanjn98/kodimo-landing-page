@@ -25,22 +25,22 @@ const problems = [
 export default function ProblemSection() {
   return (
     <section className="relative bg-text-primary py-20 shadow-[0px_4px_4px_0px_rgba(0,0,0,0.1)] lg:py-28">
-      <div className="mx-auto max-w-[1440px] px-[89px]">
+      <div className="mx-auto max-w-[1440px] px-[89px] ">
         {/* Section Labels */}
         <div className="mb-4 grid gap-12 lg:grid-cols-2 lg:gap-16">
-          <div className="text-left">
-            <span className="text-[14px] font-bold uppercase tracking-widest text-primary-navy">
-              THE PROBLEM
+          <div className="text-center">
+            <span className="text-[18px] font-bold uppercase tracking-widest text-primary-navy">
+              THE LEGACY WAY
             </span>
           </div>
-          <div className="text-left">
-            <span className="text-[14px] font-bold uppercase tracking-widest text-primary-navy">
-              THE SOLUTION
+          <div className="text-center">
+            <span className="text-[18px] font-bold uppercase tracking-widest text-primary-navy">
+              THE KODIMO WAY
             </span>
           </div>
         </div>
 
-        <div className="relative grid gap-12 lg:grid-cols-2 lg:gap-16">
+        <div className="relative grid gap-12 lg:grid-cols-2 lg:items-start lg:gap-16">
           {/* Vertical Divider */}
           <div className="absolute left-1/2 top-0 hidden h-full -translate-x-1/2 lg:block">
             <Image
@@ -58,13 +58,14 @@ export default function ProblemSection() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
+            className="flex flex-col"
           >
-            <h2 className="text-left font-heading text-[40px] font-semibold leading-[53px] text-primary-dark">
+            <h2 className="text-center font-heading text-[40px] font-semibold leading-[53px] text-primary-dark">
               Construction Estimating
               <br />
               is slow, costly and risky
             </h2>
-            <p className="mt-3 text-left text-[14px] leading-[25px] text-text-description">
+            <p className="mt-3 text-center text-[14px] leading-[25px] text-text-description">
               These challenges directly{" "}
               <span className="font-bold">impact the ability to compete and grow, </span>
               making it{" "}
@@ -116,13 +117,14 @@ export default function ProblemSection() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
+            className="flex flex-col"
           >
-            <h2 className="text-left font-heading text-[40px] font-semibold leading-[53px] text-primary-dark">
+            <h2 className="text-center font-heading text-[40px] font-semibold leading-[53px] text-primary-dark">
               Power of AI with
               <br />
               Expert Oversight
             </h2>
-            <p className="mt-3 text-left text-[14px] leading-[25px] text-text-description">
+            <p className="mt-3 text-center text-[14px] leading-[25px] text-text-description">
               Our hybrid approach combines{" "}
               <span className="font-bold">cutting-edge AI technology</span>{" "}
               with{" "}
@@ -130,20 +132,20 @@ export default function ProblemSection() {
               to deliver estimates you can trust
             </p>
 
-            {/* Right side image with overlaid feature cards */}
-            <div className="relative mt-8">
-              <div className="overflow-hidden rounded-lg">
+            {/* Right side image with overlaid feature cards - now matches left side card heights */}
+            <div className="relative mt-8 h-[436px]">
+              <div className="h-full overflow-hidden rounded-lg">
                 <Image
                   src="/images/solution-card-img.png"
                   alt="Kodimo solution"
                   width={553}
                   height={436}
-                  className="w-full rounded-lg object-cover"
+                  className="h-full w-full rounded-lg object-cover"
                 />
               </div>
 
               {/* Feature cards overlaid on image */}
-              <div className="absolute inset-0 flex flex-col justify-center gap-8 p-6">
+              <div className="absolute inset-0 flex flex-col justify-center gap-25 p-6">
                 {/* AI Speed */}
                 <div className="flex items-start gap-5">
                   <div className="relative h-14 w-14 shrink-0">

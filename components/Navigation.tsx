@@ -17,7 +17,7 @@ export default function Navigation() {
 
   return (
     <nav className="fixed top-0 z-50 w-full bg-nav-bg shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">
-      <div className="mx-auto flex h-[72px] max-w-[1440px] items-center justify-between px-[80px]">
+      <div className="mx-auto flex h-[72px] max-w-[1440px] items-center justify-between px-5 md:px-[80px]">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2">
           <Image

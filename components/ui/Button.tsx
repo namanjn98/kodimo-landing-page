@@ -17,9 +17,9 @@ export default function Button({
       className={cn(
         "inline-flex items-center justify-center rounded-lg font-semibold transition-all",
         {
-          "h-[60px] w-[226px] bg-primary-lime text-[18px] text-primary-dark hover:bg-primary-lime-hover":
+          "h-[60px] w-full sm:w-[226px] px-6 bg-primary-lime text-[16px] sm:text-[18px] text-primary-dark hover:bg-primary-lime-hover":
             variant === "primary",
-          "h-[60px] w-[226px] bg-button-secondary text-[18px] font-bold text-white hover:bg-button-secondary-hover":
+          "h-[60px] w-full sm:w-[226px] px-6 bg-button-secondary text-[16px] sm:text-[18px] font-bold text-white hover:bg-button-secondary-hover":
             variant === "secondary",
           "h-[40px] w-[172px] bg-primary-lime text-[17px] text-primary-dark hover:bg-primary-lime-hover":
             variant === "nav",

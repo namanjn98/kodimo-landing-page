@@ -7,7 +7,7 @@ import Badge from "@/components/ui/Badge";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[907px] overflow-hidden pt-[72px]">
+    <section className="relative min-h-screen overflow-hidden pt-[72px]">
       {/* Background: dark base with overlay */}
       <div className="absolute inset-0 bg-primary-dark-alt" />
       <div className="absolute inset-0 bg-black/20" />
@@ -25,8 +25,8 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="relative mx-auto max-w-[1440px] px-[107px]">
-        <div className="flex flex-col items-start pb-32 pt-[174px]">
+      <div className="relative mx-auto max-w-[1440px] px-6 md:px-[107px]">
+        <div className="flex flex-col items-start pb-32 pt-[100px] md:pt-[174px]">
           {/* Badge Pill */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -34,7 +34,8 @@ export default function Hero() {
             transition={{ duration: 0.6 }}
           >
             <Badge className="mb-[37px]">
-              The power of AI + Human expertise
+              Get your estimates in 24 hours or less
+              
             </Badge>
           </motion.div>
 
@@ -43,13 +44,13 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="max-w-[806px] font-serif text-[64px] font-light leading-[1.15]"
+            className="max-w-[806px] font-serif text-[36px] md:text-[64px] font-light leading-[1.15]"
           >
             <span className="text-primary-lime">One-click</span>{" "}
-            <span className="text-[#efefef]">estimates.</span>
+            <span className="text-[#efefef]">estimates</span>
             <br />
             <span className="text-[#efefef]">Faster Bids, </span>
-            <span className="text-primary-lime">Higher wins.</span>
+            <span className="text-primary-lime">Higher wins</span>
           </motion.h1>
 
           {/* Subtitle */}
@@ -57,9 +58,10 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="mt-[11px] max-w-[681px] text-[20px] leading-[30px] text-text-secondary"
+            className="mt-[11px] max-w-[681px] text-[16px] md:text-[20px] leading-[30px] text-text-secondary"
           >
-            Let us handle your estimates so you can focus on winning more bids. Powered by AI, verified by experts.
+            Let us handle your estimates so you can focus on winning more bids 
+            Powered by AI, verified by expert estimators
           </motion.p>
 
           {/* CTA Buttons */}
@@ -67,20 +69,21 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="mt-[67px] flex gap-[19px]"
+            className="mt-[67px] flex flex-col sm:flex-row gap-[19px] items-center sm:items-start w-full sm:w-auto"
           >
             <Button variant="primary" href="#contact" className="relative">
-              <span className="mr-6">Try it Yourself</span>
+{/* 
               <Image
                 src="/images/try-arrow.png"
                 alt=""
                 width={20}
                 height={18}
                 className="absolute right-8"
-              />
+              /> */}
+              <span>Try it Yourself</span>
             </Button>
             <Button variant="secondary" href="#demo">
-              View Demo
+              Watch Demo
             </Button>
           </motion.div>
         </div>
