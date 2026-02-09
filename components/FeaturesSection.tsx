@@ -73,10 +73,10 @@ export default function FeaturesSection() {
   }, []);
 
   return (
-    <section id="secret-sauce" className="bg-primary-dark-alt">
+    <section id="secret-sauce" className="bg-primary-dark-alt" style={{ backgroundColor: '#0C1424' }}>
       <div className="mx-auto max-w-[1440px]">
         {/* Sticky Header */}
-        <div className="sticky top-[72px] z-40 bg-primary-dark-alt px-6 md:px-[70px] pb-6 pt-16">
+        <div className="sticky top-[72px] z-40 bg-primary-dark-alt px-6 md:px-[70px] pb-6 pt-16" style={{ backgroundColor: '#0C1424' }}>
           {/* <p className="text-[14px] font-normal text-primary-lime">
             WHY USE THE KODIMO WAY?
           </p> */}
@@ -109,7 +109,7 @@ export default function FeaturesSection() {
         </div>
 
         {/* Feature Sections */}
-        <div className="space-y-0 bg-primary-dark-alt">
+        <div className="space-y-0 bg-primary-dark-alt" style={{ backgroundColor: '#0C1424' }}>
           {features.map((feature) => (
             <motion.div
               key={feature.label}
@@ -118,7 +118,7 @@ export default function FeaturesSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              className="relative px-4 md:px-[81px] pb-16 pt-8"
+              className="relative px-4 md:px-[81px] pb-16 pt-8 bg-primary-dark-alt"
             >
               {/* Dark inner card */}
               <Card variant="feature" className="relative mx-auto min-h-[466px] max-w-[1244px] overflow-hidden lg:grid lg:grid-cols-2">
