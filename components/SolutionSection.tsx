@@ -90,8 +90,8 @@ export default function SolutionSection() {
       </div>
 
       {/* How Kodimo Works */}
-      <div className="py-20 lg:py-28">
-      <div className="mx-auto max-w-[1440px] px-6 md:px-[54px]">
+      <div className="py-20 lg:py-28" style={{ overflow: 'visible' }}>
+      <div className="mx-auto max-w-[1440px] px-6 md:px-[54px]" style={{ overflow: 'visible' }}>
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -117,7 +117,7 @@ export default function SolutionSection() {
           </motion.div>
 
         {/* 3 Step Cards */}
-        <div className="mt-14 grid gap-6 md:grid-cols-3">
+        <div className="mt-14 grid gap-6 md:grid-cols-3" style={{ overflow: 'visible' }}>
           {steps.map((step, index) => (
             <motion.div
               key={step.step}
@@ -125,10 +125,11 @@ export default function SolutionSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="relative min-h-[334px] md:h-[334px] overflow-visible rounded-lg bg-primary-navy p-8"
+              className="relative min-h-[334px] md:h-[334px] rounded-lg bg-primary-navy p-8"
+              style={{ overflow: 'visible' }}
             >
-              {/* Text — constrained to left ~60% */}
-              <div className="relative z-10 max-w-[62%]">
+              {/* Text — constrained to left ~55% */}
+              <div className="relative z-10 max-w-[55%]">
                 <span className={`${step.stepLabelSize} font-bold text-text-light`}>
                   {step.step}
                 </span>
@@ -140,13 +141,16 @@ export default function SolutionSection() {
                 </p>
               </div>
 
-              {/* Image — vertically centered on the right */}
-              <div className="absolute right-2 top-1/2 -translate-y-1/2 w-[180px] h-[180px] md:w-[220px] md:h-[220px]">
+              {/* Image — vertically centered on the right, overflows card */}
+              <div
+                className="absolute right-[-10px] top-1/2 -translate-y-1/2"
+                style={{ width: '55%', height: '110%', overflow: 'visible' }}
+              >
                 <Image
                   src={step.image}
                   alt={step.title}
                   fill
-                  sizes="200px"
+                  sizes="(max-width: 768px) 180px, 280px"
                   className="object-contain"
                 />
               </div>
