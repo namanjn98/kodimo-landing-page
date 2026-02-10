@@ -86,7 +86,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="mt-[67px] flex flex-col sm:flex-row gap-[19px] items-center sm:items-start w-full sm:w-auto"
             >
-              <Button variant="primary" href="#contact" className="relative">
+              <Button variant="primary" href="https://app.kodimo.cc/" target="_blank" rel="noopener noreferrer" className="relative">
                 <span>Try it Yourself</span>
               </Button>
               <Button variant="secondary" href="#demo" onClick={openDemo}>
