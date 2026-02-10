@@ -3,6 +3,14 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
+const stats = [
+  { metric: "4x", label: "faster bids" },
+  { metric: "24/7", label: "service" },
+  { metric: "70%", label: "faster takeoffs" },
+  { metric: "30%", label: "revenue increase" },
+  { metric: "99%", label: "accuracy" },
+];
+
 const steps = [
   {
     step: "STEP 1 - INPUT",
@@ -18,8 +26,8 @@ const steps = [
     title: "AI performs estimation at 4x speeds",
     description: "Human experts verify AI outputs to deliver in time",
     image: "/images/step2-img.png",
-    imageWidth: 300,
-    imageHeight: 352,
+    imageWidth: 350,
+    imageHeight: 400,
     stepLabelSize: "text-[12px]",
   },
   {
@@ -27,15 +35,68 @@ const steps = [
     title: "Export spreadsheets in your template",
     description: "Review and export results in XLSX, XLS, or CSV",
     image: "/images/step3-img.png",
-    imageWidth: 300,
+    imageWidth: 350,
     imageHeight: 423,
     stepLabelSize: "text-[12px]",
   },
 ];
 
 export default function SolutionSection() {
+  // Duplicate stats 4x so the carousel always fills wide viewports
+  const duplicatedStats = [...stats, ...stats, ...stats, ...stats];
+
   return (
-    <section id="how-it-works" className="flex items-center min-h-screen bg-text-primary py-20 shadow-[0px_2px_4px_0px_rgba(0,0,0,0.25)] lg:py-28">
+    <section
+      id="how-it-works"
+      className="min-h-screen bg-text-primary shadow-[0px_2px_4px_0px_rgba(0,0,0,0.25)]"
+    >
+      {/* Stats Bar — dark background bridging Hero → content */}
+      <div className="bg-nav-bg pt-12 pb-12 md:pt-8 md:pb-8">
+        <div className="mx-auto max-w-[1440px] px-6 md:px-[54px]">
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center text-[14px] md:text-[16px] text-text-secondary font-medium mb-8"
+          >
+            Here is what our customers say about us
+          </motion.p>
+
+          <div className="overflow-hidden">
+            <motion.div
+              className="flex gap-12 md:gap-20"
+              animate={{ x: ["0%", "-25%"] }}
+              transition={{
+                x: {
+                  repeat: Infinity,
+                  repeatType: "loop",
+                  duration: 20,
+                  ease: "linear",
+                },
+              }}
+            >
+              {duplicatedStats.map((stat, index) => (
+                <div
+                  key={index}
+                  className="flex items-center gap-2 shrink-0"
+                >
+                  <span className="text-[20px] md:text-[24px] text-primary-lime">
+                    {stat.metric} {" "}
+                    <span className="text-[14px] md:text-[16px] text-offwhite-text font-normal">
+                    {stat.label}
+                  </span>
+                  </span>
+                  
+                </div>
+              ))}
+            </motion.div>
+          </div>
+        </div>
+      </div>
+
+      {/* How Kodimo Works */}
+      <div className="py-20 lg:py-28">
       <div className="mx-auto max-w-[1440px] px-6 md:px-[54px]">
         {/* Header */}
         <motion.div
@@ -73,7 +134,7 @@ export default function SolutionSection() {
               className="relative min-h-[334px] md:h-[334px] overflow-visible rounded-lg bg-primary-navy p-8"
             >
               {/* Text — constrained to left ~60% */}
-              <div className="relative z-10 max-w-[60%]">
+              <div className="relative z-10 max-w-[62%]">
                 <span className={`${step.stepLabelSize} font-bold text-text-light`}>
                   {step.step}
                 </span>
@@ -98,6 +159,7 @@ export default function SolutionSection() {
             </motion.div>
           ))}
         </div>
+      </div>
       </div>
     </section>
   );
