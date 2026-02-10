@@ -17,8 +17,6 @@ const steps = [
     title: "Upload, Email or Integrate PMS",
     description: "Share construction docs with one-click",
     image: "/images/step1-img.png",
-    imageWidth: 300,
-    imageHeight: 303,
     stepLabelSize: "text-[13.677px]",
   },
   {
@@ -26,8 +24,6 @@ const steps = [
     title: "AI performs estimation at 4x speeds",
     description: "Human experts verify AI outputs to deliver in time",
     image: "/images/step2-img.png",
-    imageWidth: 350,
-    imageHeight: 400,
     stepLabelSize: "text-[12px]",
   },
   {
@@ -35,8 +31,6 @@ const steps = [
     title: "Export spreadsheets in your template",
     description: "Review and export results in XLSX, XLS, or CSV",
     image: "/images/step3-img.png",
-    imageWidth: 350,
-    imageHeight: 423,
     stepLabelSize: "text-[12px]",
   },
 ];
@@ -146,14 +140,14 @@ export default function SolutionSection() {
                 </p>
               </div>
 
-              {/* Image — absolutely positioned bottom-right, overflows card */}
-              <div className="absolute bottom-20 -right-10">
+              {/* Image — absolutely positioned bottom-right */}
+              <div className="absolute bottom-0 right-0 w-[160px] h-[160px] md:w-[180px] md:h-[180px]">
                 <Image
                   src={step.image}
                   alt={step.title}
-                  width={step.imageWidth}
-                  height={step.imageHeight}
-                  className="object-contain"
+                  fill
+                  sizes="180px"
+                  className="object-contain object-bottom"
                 />
               </div>
             </motion.div>
