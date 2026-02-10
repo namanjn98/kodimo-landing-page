@@ -140,14 +140,14 @@ export default function SolutionSection() {
                 </p>
               </div>
 
-              {/* Image — absolutely positioned bottom-right */}
-              <div className="absolute bottom-0 right-0 w-[160px] h-[160px] md:w-[180px] md:h-[180px]">
+              {/* Image — vertically centered on the right */}
+              <div className="absolute right-2 top-1/2 -translate-y-1/2 w-[180px] h-[180px] md:w-[220px] md:h-[220px]">
                 <Image
                   src={step.image}
                   alt={step.title}
                   fill
-                  sizes="180px"
-                  className="object-contain object-bottom"
+                  sizes="200px"
+                  className="object-contain"
                 />
               </div>
             </motion.div>
