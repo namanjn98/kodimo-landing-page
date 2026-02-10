@@ -9,10 +9,10 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: "How it works", href: "#how-it-works" },
+    { name: "How it Works", href: "#how-it-works" },
     { name: "The Secret Sauce", href: "#secret-sauce" },
-    { name: "Customers", href: "#customers" },
-    { name: "Blog", href: "#blog" },
+    // { name: "Customers", href: "#customers" },
+    // { name: "Blog", href: "#blog" },
   ];
 
   return (
