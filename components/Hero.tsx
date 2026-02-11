@@ -77,7 +77,7 @@ export default function Hero() {
               className="mt-[11px] max-w-[681px] text-[16px] md:text-[20px] leading-[30px] text-text-secondary"
             >
               Let us handle your estimates so you can focus on winning more bids
-              <span className="min-[800px]:hidden">Powered by AI, verified by expert estimators</span>
+              Powered by AI, verified by expert estimators
             </motion.p>
 
             <motion.div
