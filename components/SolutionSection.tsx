@@ -110,10 +110,10 @@ export default function SolutionSection() {
             </h2>
             <div className="mx-auto mt-3 max-w-[647px] text-center">
               <p className="text-[14px] leading-[25px] text-text-description">
-                Three simple steps to transform your estimating process.{" "}
+                Three simple steps to transform your estimating{" "}
               </p>
               <p className="text-[14px] font-bold leading-[25px] text-text-description">
-                Get started instantly, see results in hours.
+                Get started instantly, see results in hours
               </p>
             </div>
           </motion.div>

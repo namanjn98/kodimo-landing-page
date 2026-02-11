@@ -67,6 +67,7 @@ export default function Hero() {
               <span className="text-[#efefef]">estimates</span>
               <br />
               <span className="text-[#efefef]">Faster Bids, </span>
+              <br className="min-[800px]:hidden" />
               <span className="text-primary-lime">Higher wins</span>
             </motion.h1>
 
