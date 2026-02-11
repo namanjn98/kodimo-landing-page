@@ -10,7 +10,8 @@ const features = [
     label: "NAVIGATE",
     titleItalic: "Kodi",
     titleBold: " Vision",
-    description: "Search and summarise across construction documents with our best-in-class document understanding AI models",
+    description:
+      "Search and summarise across construction documents with our best-in-class document understanding AI models",
     tabIcon: "/images/scan-tab-icon.png",
     image: "/images/Frame-46.gif",
   },
@@ -18,7 +19,8 @@ const features = [
     label: "TAKEOFFS",
     titleItalic: "Kodi",
     titleBold: " Drawing Set",
-    description: "Count, calculate and measure the drawings with precision accuracy using our best-in-class geometry AI models",
+    description:
+      "Count, calculate and measure the drawings with precision accuracy using our best-in-class geometry AI models",
     tabIcon: "/images/takeoff-tab-icon.png",
     image: "/images/Frame-47.gif",
   },
@@ -26,7 +28,8 @@ const features = [
     label: "ESTIMATE",
     titleItalic: "Kodi",
     titleBold: " PriceGPT",
-    description: "Fetch up-to-date pricing in your region and connect your historical data to generate personalised estimates",
+    description:
+      "Fetch up-to-date pricing in your region and connect your historical data to generate personalised estimates",
     tabIcon: "/images/pricing-tab-icon.png",
     image: "/images/Frame-49.gif",
   },
@@ -57,11 +60,16 @@ export default function FeaturesSection() {
       });
     };
 
-    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    const observer = new IntersectionObserver(
+      observerCallback,
+      observerOptions,
+    );
 
     // Observe all feature sections
     features.forEach((feature) => {
-      const element = document.getElementById(`feature-${feature.label.toLowerCase()}`);
+      const element = document.getElementById(
+        `feature-${feature.label.toLowerCase()}`,
+      );
       if (element) {
         observer.observe(element);
       }
@@ -73,16 +81,25 @@ export default function FeaturesSection() {
   }, []);
 
   return (
-    <section id="secret-sauce" className="bg-primary-dark-alt" style={{ backgroundColor: '#0C1424' }}>
+    <section
+      id="secret-sauce"
+      className="bg-primary-dark-alt"
+      style={{ backgroundColor: "#0C1424" }}
+    >
       <div className="mx-auto max-w-[1440px]">
         {/* Sticky Header */}
-        <div className="sticky top-[72px] z-40 bg-primary-dark-alt px-6 md:px-[70px] pb-6 pt-16" style={{ backgroundColor: '#0C1424' }}>
+        <div
+          className="sticky top-[72px] z-40 bg-primary-dark-alt px-6 md:px-[70px] pb-6 pt-16"
+          style={{ backgroundColor: "#0C1424" }}
+        >
           {/* <p className="text-[14px] font-normal text-primary-lime">
             WHY USE THE KODIMO WAY?
           </p> */}
           <h2 className="mt-4 text-[32px] font-semibold leading-[40px]">
-            <span className="text-text-light">What is our </span>
-            <span className="font-heading italic text-primary-lime">Secret Sauce?</span>
+            <span className="text-text-light">What's our </span>
+            <span className="font-heading italic text-primary-lime">
+              Secret Sauce?
+            </span>
           </h2>
 
           {/* Tab Navigation */}
@@ -109,7 +126,10 @@ export default function FeaturesSection() {
         </div>
 
         {/* Feature Sections */}
-        <div className="space-y-0 bg-primary-dark-alt" style={{ backgroundColor: '#0C1424' }}>
+        <div
+          className="space-y-0 bg-primary-dark-alt"
+          style={{ backgroundColor: "#0C1424" }}
+        >
           {features.map((feature) => (
             <motion.div
               key={feature.label}
@@ -121,7 +141,10 @@ export default function FeaturesSection() {
               className="relative px-4 md:px-[81px] pb-16 pt-8 bg-primary-dark-alt"
             >
               {/* Dark inner card */}
-              <Card variant="feature" className="relative mx-auto min-h-[466px] max-w-[1244px] overflow-hidden lg:grid lg:grid-cols-2">
+              <Card
+                variant="feature"
+                className="relative mx-auto min-h-[466px] max-w-[1244px] overflow-hidden lg:grid lg:grid-cols-2"
+              >
                 {/* Text Content */}
                 <div className="p-6 md:p-12">
                   <div className="mb-3 flex items-center gap-2">
@@ -136,8 +159,13 @@ export default function FeaturesSection() {
                     {feature.label}
                   </span>
                   <h3 className="mt-2 text-[28px] md:text-[40px] leading-[35px]">
-                    <span className="font-serif italic text-primary-lime">{feature.titleItalic}<sup className="text-[10px] align-super ml-1">TM</sup></span>
-                    <span className="font-bold text-[#efefef]">{feature.titleBold}</span>
+                    <span className="font-serif italic text-primary-lime">
+                      {feature.titleItalic}
+                      <sup className="text-[10px] align-super ml-1">TM</sup>
+                    </span>
+                    <span className="font-bold text-[#efefef]">
+                      {feature.titleBold}
+                    </span>
                   </h3>
                   <p className="mt-6 max-w-[413px] text-[18px] leading-[35px] text-text-primary">
                     {feature.description}

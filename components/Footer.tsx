@@ -13,8 +13,8 @@ export default function Footer() {
                 Kodimo
               </p>
               <p className="mt-4 max-w-[356px] text-[12px] leading-[20px] text-text-primary">
-                Combining AI with verified human experts to deliver
-                accurate construction estimates that help you win more bids
+                Combining AI with verified human experts to deliver accurate
+                construction estimates that help you win more bids
               </p>
               <div className="mt-6 space-y-1 text-[12px] leading-[20px] text-text-primary">
                 <p>Reach out to nj@kodimo.cc for further questions</p>
@@ -33,17 +33,26 @@ export default function Footer() {
                 </h4>
                 <ul className="mt-4 space-y-3">
                   <li>
-                    <a href="#" className="text-[14px] font-normal leading-[1.217] text-primary-lime transition-colors hover:text-white">
-                      Instagram
+                    <a
+                      href="https://www.youtube.com/@kodimo-ai"
+                      className="text-[14px] font-normal leading-[1.217] text-primary-lime transition-colors hover:text-white"
+                    >
+                      Youtube
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="text-[14px] font-normal leading-[1.217] text-primary-lime transition-colors hover:text-white">
+                    <a
+                      href="https://www.linkedin.com/company/kodimo/"
+                      className="text-[14px] font-normal leading-[1.217] text-primary-lime transition-colors hover:text-white"
+                    >
                       LinkedIn
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="text-[14px] font-normal leading-[1.217] text-primary-lime transition-colors hover:text-white">
+                    <a
+                      href="#"
+                      className="text-[14px] font-normal leading-[1.217] text-primary-lime transition-colors hover:text-white"
+                    >
                       Facebook
                     </a>
                   </li>
@@ -57,26 +66,37 @@ export default function Footer() {
                 </h4>
                 <ul className="mt-4 space-y-3">
                   <li>
-                    <a href="#how-it-works" className="text-[14px] font-normal leading-[1.217] text-primary-lime transition-colors hover:text-white">
+                    <a
+                      href="#how-it-works"
+                      className="text-[14px] font-normal leading-[1.217] text-primary-lime transition-colors hover:text-white"
+                    >
                       How it works
                     </a>
                   </li>
                   <li>
-                    <a href="#secret-sauce" className="text-[14px] font-normal leading-[1.217] text-primary-lime transition-colors hover:text-white">
+                    <a
+                      href="#secret-sauce"
+                      className="text-[14px] font-normal leading-[1.217] text-primary-lime transition-colors hover:text-white"
+                    >
                       The Secret Sauce
                     </a>
                   </li>
                   <li>
-                    <a href="#customers" className="text-[14px] font-normal leading-[1.217] text-primary-lime transition-colors hover:text-white">
+                    <a
+                      href="#customers"
+                      className="text-[14px] font-normal leading-[1.217] text-primary-lime transition-colors hover:text-white"
+                    >
                       Customers
                     </a>
                   </li>
                   <li>
-                    <a href="#customers" className="text-[14px] font-normal leading-[1.217] text-primary-lime transition-colors hover:text-white">
+                    <a
+                      href="#customers"
+                      className="text-[14px] font-normal leading-[1.217] text-primary-lime transition-colors hover:text-white"
+                    >
                       Blog
                     </a>
                   </li>
-                  
                 </ul>
               </div>
 
