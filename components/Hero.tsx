@@ -74,10 +74,10 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="mt-[11px] max-w-[681px] text-[16px] md:text-[20px] leading-[30px] text-text-secondary hidden min-[800px]:block"
+              className="mt-[11px] max-w-[681px] text-[16px] md:text-[20px] leading-[30px] text-text-secondary"
             >
               Let us handle your estimates so you can focus on winning more bids
-              Powered by AI, verified by expert estimators
+              <span className="min-[800px]:hidden">Powered by AI, verified by expert estimators</span>
             </motion.p>
 
             <motion.div
