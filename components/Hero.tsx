@@ -67,6 +67,7 @@ export default function Hero() {
               <span className="text-[#efefef]">estimates</span>
               <br />
               <span className="text-[#efefef]">Faster Bids, </span>
+              <br className="min-[800px]:hidden" />
               <span className="text-primary-lime">Higher wins</span>
             </motion.h1>
 
@@ -76,7 +77,10 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="mt-[11px] max-w-[681px] text-[16px] md:text-[20px] leading-[30px] text-text-secondary"
             >
-              <span className="min-[800px]:hidden">Let us handle your estimates so you can focus on winning more bids</span>
+              <span className="max-[800px]:hidden">
+                Let us handle your estimates so you can focus on winning more
+                bids
+              </span>
               Powered by AI, verified by expert estimators
             </motion.p>
 
