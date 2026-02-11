@@ -53,7 +53,7 @@ export default function Hero() {
               transition={{ duration: 0.6 }}
             >
               <Badge className="mb-[37px]">
-                Get your estimates in hours instead of days
+                Get estimates in hours, not days
               </Badge>
             </motion.div>
 
